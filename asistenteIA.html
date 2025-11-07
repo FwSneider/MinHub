@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente IA - MindHub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/assistant.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">MindHub</a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#funciones">Funciones</a></li>
+            <li><a href="index.html#planes">Planes</a></li>
+            <li><a id="IA" href="#" class="active">Asistente de IA</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="iniciosesion.html" class="btn btn-secondary">Iniciar sesión</a>
+            <a href="registro.html" class="btn btn-primary">Registrarse</a>
+        </div>
+    </nav>
+
+    <!-- Seccion del Asistente IA -->
+    <div class="ai-container">
+        <div class="ai-workspace">
+            <aside class="ai-sidebar">
+                <h2>Temas recientes</h2>
+                <ul class="ai-topics">
+                    <li>Matemáticas avanzadas</li>
+                    <li>Programación en Python</li>
+                    <li>Historia del Arte</li>
+                    <li>Física Cuántica</li>
+                    <li>Literatura Universal</li>
+                </ul>
+            </aside>
+
+            <main class="ai-chat">
+                <div class="chat-header">
+                    <h2>Asistente IA de MindHub</h2>
+                    <p>¡Pregúntame cualquier cosa relacionada con tus estudios!</p>
+                </div>
+
+                <div class="chat-messages">
+                    <div class="message ai">
+                        <div class="message-content">
+                            <p>¡Hola! Soy tu asistente de MindHub. ¿En qué puedo ayudarte hoy?</p>
+                        </div>
+                    </div>
+                    <div class="message user">
+                        <div class="message-content">
+                            <p>¿Podrías ayudarme a entender los conceptos básicos del cálculo diferencial?</p>
+                        </div>
+                    </div>
+                    <div class="message ai">
+                        <div class="message-content">
+                            <p>¡Por supuesto! El cálculo diferencial es una rama de las matemáticas que estudia cómo cambian las funciones. Comencemos con los conceptos fundamentales...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input">
+                    <div class="input-container">
+                        <textarea placeholder="Escribe tu pregunta aquí..."></textarea>
+                        <button class="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

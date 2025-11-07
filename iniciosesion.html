@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - MindHub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">MindHub</a>
+        <ul class="nav-menu">
+            <li><a href="index.html" id="inicio">Inicio</a></li>
+            <li><a href="asistenteIA.html">Asistente de IA</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="registro.html" class="btn btn-primary">Registrarse</a>
+        </div>
+    </nav>
+
+
+    <!-- Seccion de Autenticación -->
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-image">
+                <h2>¡Bienvenido de nuevo!</h2>
+                <p>Continúa tu viaje de aprendizaje con MindHub. Tu asistente personal te está esperando.</p>
+            </div>
+            <div class="auth-form-container">
+                <div class="auth-header">
+                    <h1>Iniciar Sesión</h1>
+                    <p>Ingresa tus credenciales para continuar</p>
+                </div>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre de usuario</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre de usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <button type="submit" class="auth-button">Iniciar Sesión</button>
+            </form>
+
+            <div class="auth-links">
+                <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
